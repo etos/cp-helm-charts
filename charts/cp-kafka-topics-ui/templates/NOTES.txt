@@ -6,12 +6,4 @@ https://github.com/Landoop/kafka-topics-ui
 
 To Access:
 
-RUN:
-
-telepresence \
-    --namespace kafka \
-    --also-proxy=100.64.0.0/10
-
-THEN:
-
-http://kafka-topics-ui.kafka.svc.cluster.local:8000/
+http://kafka-topics-ui.<NAMESPACE>.svc.cluster.local:8000/
